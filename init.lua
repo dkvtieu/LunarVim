@@ -37,6 +37,7 @@ end
 
 -- TODO is there a way to do this without vimscript
 vim.cmd('source '..CONFIG_PATH..'/vimscript/functions.vim')
+vim.cmd('source '..CONFIG_PATH..'/vimscript/custom.vim')
 
 -- LSP
 require('lsp')
