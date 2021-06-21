@@ -123,6 +123,17 @@ return require("packer").startup(function(use)
     require_plugin("TrueZen.nvim")
     require_plugin("nvim-ts-context-commentstring")
 
+    -- Custom
+
+    use {'mbbill/undotree'}
+    require_plugin('undotree')
+    use {'tpope/vim-surround'}
+    require_plugin('vim-surround')
+    use {'bkad/camelcasemotion'}
+    require_plugin('camelcasemotion')
+    use {'wellle/targets.vim'}
+    require_plugin('targets.vim')
+
     -- Extras
     if O.extras then
         use {'metakirby5/codi.vim', opt = true}
@@ -154,8 +165,11 @@ return require("packer").startup(function(use)
         -- simrat39/symbols-outline.nvim
 
         -- Git
-        -- use {'tpope/vim-fugitive', opt = true}
-        -- use {'tpope/vim-rhubarb', opt = true}
+        use {'tpope/vim-fugitive', opt = true}
+        require_plugin('vim-fugitive')
+        use {'tpope/vim-rhubarb', opt = true}
+        require_plugin('vim-fugitive')
+
         -- pwntester/octo.nvim
 
         -- Easily Create Gists
