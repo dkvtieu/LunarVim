@@ -98,5 +98,9 @@
     nnoremap <leader>pb :lua require('telescope.builtin').buffers()<CR>
     nnoremap <leader>vh :lua require('telescope.builtin').help_tags()<CR>
 
+" Quickfix navigation
+    map <C-j> :cn<CR>
+    map <C-k> :cp<CR>
 
+" Unmap telescope project find
     unmap  <leader>p
