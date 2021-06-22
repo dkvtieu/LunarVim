@@ -76,3 +76,9 @@ vim.cmd("inoremap <silent><expr> <CR>      compe#confirm('<CR>')")
 vim.cmd("inoremap <silent><expr> <C-e>     compe#close('<C-e>')")
 vim.cmd("inoremap <silent><expr> <C-f>     compe#scroll({ 'delta': +4 })")
 vim.cmd("inoremap <silent><expr> <C-d>     compe#scroll({ 'delta': -4 })")
+
+-- Custom
+
+vim.api.nvim_set_keymap('n', '[g', '<cmd>lua vim.lsp.diagnostic.goto_prev()<CR>', {silent = true})
+vim.api.nvim_set_keymap('n', ']g', '<cmd>lua vim.lsp.diagnostic.goto_next()<CR>', {silent = true})
+
